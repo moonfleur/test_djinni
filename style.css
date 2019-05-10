@@ -1,0 +1,525 @@
+@font-face {
+    font-family: 'Sofia Pro Regular';
+    src: url("./fonts/SofiaProRegular.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Sofia Pro - Semi Bold';
+    src: url("./fonts/SofiaProSemiBold.ttf");
+    font-weight: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+
+.wrapper {
+    display: flex;
+    margin: 30px 180px 80px 180px;
+}
+
+.wrapLogo {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Sofia Pro Regular', sans-serif;
+}
+
+.logoImage {
+    width: 120px;
+    height: 66px;
+    margin: 50px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 40px 40px 40px 0;
+}
+
+.nav-links a{
+    width: 364px;
+    height: 11px;
+    color: #111518;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 14px;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.98px;
+    text-decoration: none;
+    position: relative;
+}
+.nav-links a:after {
+    background-color: #ffeb3b;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    transition: width .3s ease-in-out;
+    position: absolute;
+    bottom: 38px;
+}
+.nav-links a:hover:after,
+.nav-links a:focus:after {
+    width: 100%;
+}
+
+.siteArticle {
+    width: 854px;
+    color: #111518;
+    font-family: 'Sofia Pro - Semi Bold', sans-serif;
+    font-size: 70px;
+    line-height: 72px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #8f908f;;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    display: none;
+}
+
+/*First Section*/
+
+.backgroundImage {
+    width: 100%;
+    height: auto;
+}
+
+/*Second Section*/
+
+.secondSection {
+    margin: 115px 185px;
+}
+
+.infoBlocks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.infoArticles {
+    color: #101417;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.list {
+    width: 253px;
+    color: #101417;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 11px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #1d1e25;
+}
+
+.footerWrap {
+    /*margin: 140px 180px;*/
+    margin: 140px 50px 0 50px;
+}
+
+.spaces {
+    display: flex;
+    justify-content: space-around;
+}
+
+.formTreatment {
+    width: 234px;
+    color: #ffffff;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 140px 0 40px 0;
+}
+
+.formData,
+.formDataComment {
+    width: 592px;
+    height: 55px;
+    border-radius: 3px;
+    border: 1px solid #60e3a1;
+    background-color: transparent;
+    color: #60e3a1;
+    padding: 20px;
+    opacity: 0.6;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.formDataComment {
+    height: 150px;
+    resize: none;
+}
+
+.spacesInTitleArea {
+    margin: 140px 0 15px 0;
+}
+
+.submit {
+    width: 150px;
+    height: 55px;
+    border-radius: 3px;
+    background-color: #60e3a1;
+    border-style: none;
+    color: #1d1e25;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 53px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.submit:hover {
+    width: 175px;
+    background-color: #f9d10d;
+    transition: all 0.5s ease;
+}
+
+.firstLine {
+    width: 70px;
+    height: 5px;
+    background-color: #f9d10d;
+    transition: all 0.8s ease;
+}
+
+.secondLine {
+    height: 1px;
+    background-color: #4a4d5e;
+    opacity: 0.3;
+    margin: 150px 0 20px 0;
+}
+
+.contacts {
+    color: #ffffff;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.rights {
+    color: #4a4d5e;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 58px;
+}
+
+.spaceInFooter {
+    margin-bottom: 20px;
+}
+
+.spacesInContacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Styles for Comments*/
+
+.cards {
+    padding: 38px 30px;
+    box-shadow: 7px 11px 30px rgba(17, 21, 24, 0.04);
+    border-radius: 3px;
+    background-color: #ffffff;
+    width: 48%;
+    margin-bottom: 40px;
+    line-height: 26px;
+
+}
+
+.cardsName {
+    color: #333333;
+    font-family: 'Open Sans - Semibold', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.cardsParagr {
+    margin-bottom: 30px;
+    color: #888888;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.commentsBtn {
+    width: 150px;
+    height: 55px;
+    border-radius: 3px;
+    background-color: #60e3a1;
+    border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.commentsBtn:hover {
+    width: 175px;
+    background-color: #f9d10d;
+    transition: all 0.5s ease;
+}
+
+.btnText {
+    width: 82px;
+    height: 13px;
+    color: #111518;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.24px;
+    text-decoration: none;
+}
+
+/*.aligningRow {*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-wrap: wrap*/
+/*}*/
+
+.container {
+    margin: 0 180px;
+}
+
+.endComments {
+    text-align: center;
+    opacity: 0.5;
+    color: #111518;
+    font-family: 'Sofia Pro - Semi Bold', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 72px;
+    margin: 17px 0;
+}
+
+.homepageBtn {
+    width: 212px;
+    height: 55px;
+    border-radius: 3px;
+    border: 1px solid #60e3a1;
+    margin: 18px auto 100px;
+    background-color: transparent;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+.homepageBtn:hover {
+    transform: translateX(-25px);
+    transition: all 0.5s ease;
+}
+
+.homepageLink {
+    text-decoration: none;
+    color: #1d1e25;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 53px;
+    margin-left: 9px;
+}
+
+.first {
+    float: left;
+}
+
+.second {
+    float: right;
+}
+
+.third {
+    float: right;
+}
+
+.fourth {
+    float: left;
+}
+
+.fifth{
+    float: right;
+}
+
+.sixth {
+    float: left;
+}
+
+.spaceInFooterComm {
+    margin: 20px;
+}
+
+.rightsComm {
+    margin: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.nav-links li .lineOnComm::after {
+    background-color: #ffeb3b;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100%;
+    transition: width .3s ease-in-out;
+    position: absolute;
+    bottom: 38px;
+}
+
+/*Onecomment page*/
+
+.containerComm {
+    margin: 0 300px;
+}
+
+.commentPage {
+    width: 158px;
+    height: 55px;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: all 0.5s ease;
+    display: block;
+    border: none;
+    margin: 18px 0 55px;
+}
+
+.commentPage:hover {
+    transform: translateX(25px);
+    transition: all 0.5s ease;
+}
+
+.siteArticleComm {
+    width: 759px;
+    color: #111518;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 48px;
+    margin-bottom: 52px;
+}
+
+.commentText {
+    color: #101417;
+    font-family: 'Sofia Pro Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 100px;
+}
+
+.thirdLine {
+    width: 100%;
+    height: 1px;
+    background-color: #4a4d5e;
+    opacity: 0.1;
+    margin-bottom: 71px;
+}
+
+button.scroll_down {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 294px;
+    left: 736px;
+    right: 0;
+    height: 50px;
+    width: 30px;
+    bottom: 60px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+button.scroll_down:before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #000;
+    border-radius: 100%;
+    -webkit-animation: scroll_down_btn-animation 2s infinite;
+    animation: scroll_down_btn-animation 2s infinite;
+    box-sizing: border-box;
+}
+
+@keyframes scroll_down_btn-animation {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes scroll_down_btn-animation {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* -------------------------------------------------------------------------
+   end Scroll Down Button
+ * ------------------------------------------------------------------------- */
+
+

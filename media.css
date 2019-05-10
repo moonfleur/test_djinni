@@ -1,0 +1,236 @@
+@media screen and (max-width: 768px){
+    .wrapper {
+        display: flex;
+        margin: 13px 80px 80px 80px;
+    }
+
+    .siteArticle {
+        width: 632px;
+        font-size: 58px;
+        line-height: 63px;
+    }
+
+    .secondSection {
+        margin: 90px 50px;
+    }
+
+    .list {
+        width: 170px;
+    }
+
+    .infoArticles {
+        font-size: 27px;
+    }
+
+    .formTreatment {
+        width: 207px;
+        font-size: 40px;
+        margin: 130px 0 30px 0;
+    }
+
+    .formDataComment {
+        width: 342px;
+    }
+
+    .formData {
+        width: 340px;
+    }
+
+    .submit {
+        width: 140px;
+        height: 45px;
+        line-height: 44px;
+    }
+
+    .container {
+        margin: 0 40px;
+    }
+
+    .containerComm {
+        margin: 0 50px;
+    }
+
+    .siteArticleComm {
+        font-size: 34px;
+    }
+
+    button.scroll_down {
+        left: 664px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .wrapper {
+        margin: 0 25px 50px 26px;
+    }
+
+    .siteArticle {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .infoBlocks {
+        flex-direction: column;
+    }
+
+    .secondSection {
+        margin: 50px auto 20px;
+    }
+
+    .position {
+        margin: 20px 50px;
+    }
+
+    .list {
+        width: auto;
+    }
+
+    .spaces {
+        flex-direction: column;
+    }
+
+    .footerWrap {
+        margin: 50px 0 0 20px;
+    }
+
+    .formTreatment {
+        margin: 63px 0 30px 0;
+    }
+
+    .spacesInTitleArea {
+        margin: 50px 0 15px 0;
+    }
+
+    .secondLine {
+        width: calc(100% - 15px);
+        margin: 85px 0 20px 0;
+    }
+
+    .rights {
+        margin-right: 15px;
+        width: 101px;
+        line-height: 30px;
+        font-size: 10px;
+    }
+
+    .formData {
+        width: calc(100% - 15px);
+        font-size: 16px;
+    }
+
+    .formDataComment {
+        width: calc(100% - 15px);
+    }
+
+    .navLinksMobile {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        margin-right: 50px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        right: 0;
+        height: 200px;
+        background-color: #8f908f;
+        position: absolute;
+        top: 116px;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar li {
+        position: relative;
+        right: 55px;
+        text-align: right;
+        list-style: none;
+        margin: 32px 0;
+    }
+    .navbar li a {
+        text-decoration: none;
+        text-align: right;
+        color: white;
+        cursor: pointer;
+    }
+
+    .cards {
+        width: auto;
+    }
+
+    .first {
+        float: none;
+    }
+
+    .second {
+        float: none;
+    }
+
+    .third {
+        float: none;
+    }
+
+    .fourth {
+        float: none;
+    }
+
+    .fifth{
+        float: none;
+    }
+
+    .sixth {
+        float: none;
+    }
+
+    .endComments {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .siteArticleComm {
+        width: auto;
+        font-size: 28px;
+    }
+
+    button.scroll_down {
+        display: none;
+    }
+}
+
+.nav-active {
+    transform: translate(0%);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+

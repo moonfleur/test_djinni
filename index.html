@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="wrapLogo">
+                <a href="#">
+                    <img src="img/logo.png" alt="logo" class="logoImage">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#">Write comment</a>
+                </li>
+                <li>
+                    <a href="all_comments.html">Comments</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="navbar" id="navbar">
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#">Write comment</a>
+                </li>
+                <li>
+                    <a href="all_comments.html">Comments</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <h1 class="siteArticle" id="siteArticle">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h1>
+            <button type="button" class="scroll_down" id="scroll_down"></button>
+        </div>
+    </header>
+
+    <section class="firstSection" id="firstSection">
+        <img src="img/background_img.png" alt="background_image" class="backgroundImage">
+    </section>
+
+    <section class="secondSection" id="secondSection">
+        <div class="infoBlocks">
+            <div class="position">
+                <img src="img/about.png" alt="aboutUs">
+                <h4 class="infoArticles">Who we are</h4>
+                <p class="list">
+                    • It is a long established fact that a reader will be distracted
+                </p>
+                <p class="list">
+                    • The readable content of a page when looking at its layout
+                </p>
+                <p class="list">
+                    • The point of using Lorem Ipsum
+                </p>
+                <p class="list">
+                    • As opposed to using 'Content here, content here'.
+                </p>
+                <!--<ul class="list">-->
+                    <!--<li>It is a long established fact that a reader will be distracted</li>-->
+                    <!--<li>The readable content of a page when looking at its layout</li>-->
+                    <!--<li>The point of using Lorem Ipsum</li>-->
+                    <!--<li>As opposed to using 'Content here, content here'.</li>-->
+                <!--</ul>-->
+            </div>
+            <div class="position">
+                <img src="img/work.png" alt="ourWork">
+                <h4 class="infoArticles">What we do</h4>
+                <p class="list">
+                    • Many desktop publishing packages and web page
+                </p>
+                <p class="list">
+                    • There are many variations of passages of Lorem Ipsum available, but the majority have
+                </p>
+                <p class="list">
+                    • Various versions have evolved over the years, sometimes by accident
+                </p>
+            </div>
+            <div class="position">
+                <img src="img/technology.png" alt="technology">
+                <h4 class="infoArticles">Technology</h4>
+                <p class="list">
+                    • The point of using Lorem Ipsum
+                </p>
+                <p class="list">
+                    • As opposed to using 'Content here, content here'
+                </p>
+                <p class="list">
+                    • Contrary to popular belief, Lorem Ipsum is not simply random text
+                </p>
+                <p class="list">
+                    •  A Latin professor at Hampden-Sydney College in Virginia
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerWrap">
+            <div class="spaces">
+                <div>
+                    <h2 class="formTreatment">Write comment</h2>
+                    <hr class="firstLine">
+                </div>
+                <div>
+                    <form action="" method="post" id="commentform" onSubmit="return checkall()" name="commentform">
+                        <div class="spacesInTitleArea">
+                            <label for="author"></label>
+                            <input type="text" id="author" value="Title" id="author" value=""  class="formData" onMouseOver="this.focus();">
+                        </div>
+                        <div>
+                            <textarea name="comment" id="comment" class="formDataComment" onMouseOver="this.focus();">Your comment</textarea>
+                            <label for="comment"></label>
+                            <!--<input type="text" id="comment" value="Your comment" class="formDataComment">-->
+                        </div>
+                        <input type="submit" id="submit" value="Send" class="submit">
+                    </form>
+                </div>
+            </div>
+            <hr class="secondLine">
+            <div class="spacesInContacts">
+                <div class="spaceInFooter">
+                    <h6 class="contacts">mail@mailtest.com</h6>
+                    <h6 class="contacts">+30-6977664062</h6>
+                </div>
+                <div>
+                    <h6 class="rights">Copyright © 2019 Test All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="test.js"></script>
+</body>
+</html>
